@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title> من عبد التواب الى روحك الطيبة يا أبو بكر</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      text-align: center;
+      padding-top: 100px;
+      font-family: sans-serif;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    p {
+      color: #34495e;
+    }
+
+    img {
+      margin: 20px;
+      border-radius: 10px;
+      width: 200px;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+<h1>من عبد التواب إلى أبو بكر بن عفيف</h1>
+<p>صديقي العزيز، رغم البُعد تبقى في القلب. لك مني هذه الصفحة عربون محبة وذكرى جميلة.</p>
+
+<img src="https://i.postimg.cc/fRPStTtq/IMG-20250419-151911-487.jpg" alt="أبوبكر بن عفيف">
+
+<br><br>
+
+<a href="https://www.instagram.com/abobakirbinafif" target="_blank">
+  <button>زيارة حساب أبو بكر</button>
+</a>  <h1>مرحبًا! أنا أبو بكر بن عفيف </h1>
+  <p> س معلم وكاتب مؤثر /p>
+
+  <img src="https://i.postimg.cc/fRPStTtq/IMG-20250419-151911-487.jpg
+  " alt="أبوبكر بن عفيف">
+
+  <br>
+
+  <button onclick="alert('شكرًا لزيارتك!')">اضغط هنا</button>
+  
+<br>
+<button onclick="window.location.href='about.html'">من أنا</button>
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mpeg">
+  متصفحك لا يدعم تشغيل الصوت.
+</audio>
+
+
+<br><br>
+
+<button onclick="toggleAudio()">تشغيل / إيقاف الصوت</button>
+
+<audio id="bgAudio" loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mpeg">
+  متصفحك لا يدعم تشغيل الصوت.
+</audio>
+
+<script>
+  const audio = document.getElementById("bgAudio");
+  let isPlaying = false;
+
+  function toggleAudio() {
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    isPlaying = !isPlaying;
+  }
+</script>
+</body>
+</html>
